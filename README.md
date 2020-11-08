@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/gzeinnumer/MyLibDialogFragment/blob/main/preview/example1.jpg" width="400"/>
+  <img src="https://github.com/gzeinnumer/MyLibDialogFragment/blob/master/preview/example1.jpg" width="400"/>
 </p>
 
 <h1 align="center">
@@ -183,7 +183,7 @@ getDialog().dismiss();
 
 #
 **Preview :**
-|![](https://github.com/gzeinnumer/MyLibDialogFragment/blob/main/preview/example2.jpg)|![](https://github.com/gzeinnumer/MyLibDialogFragment/blob/main/preview/example3.jpg)|
+|![](https://github.com/gzeinnumer/MyLibDialogFragment/blob/master/preview/example2.jpg)|![](https://github.com/gzeinnumer/MyLibDialogFragment/blob/master/preview/example2.jpg)|
 |---|---|
 | Use `setFullScreen(true)`| Use `setCanvasWidth(0.3)` |
 
