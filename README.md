@@ -102,6 +102,7 @@ public class CustomMyLibDialog extends MyLibDialog {
 
 #
 - Custom Your Dialog
+
 Here is some configuration that you can use. Use this configuration on `onStart()`. Optional you can use it or not.
 ```java
 public class CustomMyLibDialog extends MyLibDialog {
@@ -134,6 +135,7 @@ public class CustomMyLibDialog extends MyLibDialog {
 
 #
 - Change Corner
+
 You can change corner on canvas. With this step.
 ```java
 public class CustomMyLibDialog extends MyLibDialog {
@@ -165,6 +167,7 @@ getDialog().dismiss();
 
 #
 - Example Corner
+
 `R.drawable.rounded_corner`
 ```xml
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
@@ -183,7 +186,7 @@ getDialog().dismiss();
 
 #
 **Preview :**
-|![](https://github.com/gzeinnumer/MyLibDialogFragment/blob/master/preview/example2.jpg)|![](https://github.com/gzeinnumer/MyLibDialogFragment/blob/master/preview/example2.jpg)|
+|![](https://github.com/gzeinnumer/MyLibDialogFragment/blob/master/preview/example2.jpg)|![](https://github.com/gzeinnumer/MyLibDialogFragment/blob/master/preview/example3.jpg)|
 |---|---|
 | Use `setFullScreen(true)`| Use `setCanvasWidth(0.3)` |
 
