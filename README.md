@@ -13,7 +13,7 @@
     <a><img src="https://img.shields.io/badge/Koltin-Suport-green?logo=kotlin&style=flat"></a>
     <a href="https://github.com/gzeinnumer"><img src="https://img.shields.io/github/followers/gzeinnumer?label=follow&style=social"></a>
     <br>
-    <p>Simple function for <b>Date</b> and <b>String</b>.</p>
+    <p>Simple way to customize <b>DialogFragment</b>.</p>
 </p>
 
 ---
@@ -45,7 +45,7 @@ dependencies {
 ## USE
 
 ### DialogFragment.
-> "dialog.xml"
+> dialog.xml
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -71,7 +71,7 @@ dependencies {
 </LinearLayout>
 ```
 
-Extends `MyLibDialog` to your custom `DialogFragment`
+Extends `MyLibDialog` to your custom `DialogFragment` and inflate you `layout` on `onCreateView`
 > **CustomMyLibDialog.java**
 ```java
 public class CustomMyLibDialog extends MyLibDialog {
@@ -97,7 +97,7 @@ public class CustomMyLibDialog extends MyLibDialog {
 }
 ```
 
-Here is some configuration that you can use. Use this configuration on `onStart()`
+Here is some configuration that you can use. Use this configuration on `onStart()`. Optional you can use it or not.
 ```java
 public class CustomMyLibDialog extends MyLibDialog {
 
@@ -109,6 +109,7 @@ public class CustomMyLibDialog extends MyLibDialog {
 
         // disable cancel
         getDialog().setCancelable(false);
+
         // disable dismiss dialog out side
         getDialog().setCanceledOnTouchOutside(false);
 
@@ -148,6 +149,11 @@ public class CustomMyLibDialog extends MyLibDialog {
         });
     }
 }
+```
+
+To dismiss `Dialog`
+```java
+getDialog().dismiss();
 ```
 
 `R.drawable.rounded_corner`
