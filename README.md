@@ -3,7 +3,7 @@
 </p>
 
 <h1 align="center">
-    MyLibUtils
+    MyLibDialogFragment
 </h1>
 
 <p align="center">
@@ -57,6 +57,11 @@ dependencies {
     android:background="@color/white"
     android:gravity="center"
     android:orientation="vertical">
+
+    <TextView
+        android:text="You can use your widget here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -143,6 +148,22 @@ public class CustomMyLibDialog extends MyLibDialog {
         });
     }
 }
+```
+
+`R.drawable.rounded_corner`
+```xml
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+
+    <corners
+        android:bottomLeftRadius="10dp"
+        android:bottomRightRadius="10dp"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp" />
+
+    <solid android:color="@android:color/white" />
+
+</shape>
 ```
 
 ---

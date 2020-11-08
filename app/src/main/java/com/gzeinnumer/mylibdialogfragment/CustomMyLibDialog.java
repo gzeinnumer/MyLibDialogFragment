@@ -26,7 +26,7 @@ public class CustomMyLibDialog extends MyLibDialog {
 //        getDialog().setCanceledOnTouchOutside(false);
 
 //        setFullScreen(true);
-//        setCanvasWidth(0.3);
+        setCanvasWidth(0.3);
 //        enableBackButton(true);
     }
 
