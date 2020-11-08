@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/gzeinnumer/MyLibUtils/blob/master/preview/bg.jpg" width="400"/>
+  <img src="https://github.com/gzeinnumer/MyLibDialogFragment/blob/main/preview/example1.jpg" width="400"/>
 </p>
 
 <h1 align="center">
@@ -45,7 +45,8 @@ dependencies {
 ## USE
 
 ### DialogFragment.
-> dialog.xml
+- Dialog View
+> **dialog.xml**
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -71,6 +72,8 @@ dependencies {
 </LinearLayout>
 ```
 
+#
+- Create Class `CustomMyLibDialog`
 Extends `MyLibDialog` to your custom `DialogFragment` and inflate you `layout` on `onCreateView`
 > **CustomMyLibDialog.java**
 ```java
@@ -97,6 +100,8 @@ public class CustomMyLibDialog extends MyLibDialog {
 }
 ```
 
+#
+- Custom Your Dialog
 Here is some configuration that you can use. Use this configuration on `onStart()`. Optional you can use it or not.
 ```java
 public class CustomMyLibDialog extends MyLibDialog {
@@ -127,6 +132,8 @@ public class CustomMyLibDialog extends MyLibDialog {
 }
 ```
 
+#
+- Change Corner
 You can change corner on canvas. With this step.
 ```java
 public class CustomMyLibDialog extends MyLibDialog {
@@ -156,6 +163,8 @@ To dismiss `Dialog`
 getDialog().dismiss();
 ```
 
+#
+- Example Corner
 `R.drawable.rounded_corner`
 ```xml
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
@@ -171,6 +180,16 @@ getDialog().dismiss();
 
 </shape>
 ```
+
+#
+**Preview :**
+|![](https://github.com/gzeinnumer/MyLibDialogFragment/blob/main/preview/example2.jpg)|![](https://github.com/gzeinnumer/MyLibDialogFragment/blob/main/preview/example3.jpg)|
+|---|---|
+| Use `setFullScreen(true)`| Use `setCanvasWidth(0.3)` |
+
+---
+
+**FullCode [MainActivity](https://github.com/gzeinnumer/MyLibDialogFragment/blob/master/app/src/main/java/com/gzeinnumer/mylibdialogfragment/MainActivity.java) & [CustomMyLibDialog](https://github.com/gzeinnumer/MyLibDialogFragment/blob/master/app/src/main/java/com/gzeinnumer/mylibdialogfragment/CustomMyLibDialog.java) &  [XML](https://github.com/gzeinnumer/MyLibDialogFragment/blob/master/app/src/main/res/layout/dialog.xml)**
 
 ---
 
