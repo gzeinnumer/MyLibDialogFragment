@@ -74,7 +74,7 @@ dependencies {
 
 #
 - Create Class `CustomMyLibDialog`
-Extends `MyLibDialog` to your custom `DialogFragment` and inflate you `layout` on `onCreateView`
+Extends `MyLibDialog` to your custom `DialogFragment`. and inflate you `layout` on `onCreateView`
 > **CustomMyLibDialog.java**
 ```java
 public class CustomMyLibDialog extends MyLibDialog {
