@@ -184,6 +184,18 @@ getDialog().dismiss();
 </shape>
 ```
 
+## Show The Dialog
+> **MainActivity.java**
+```java
+FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+Fragment previous = getSupportFragmentManager().findFragmentByTag(CustomMyLibDialog.TAG);
+if(previous != null){
+    transaction.remove(previous);
+}
+CustomMyLibDialog dialog = CustomMyLibDialog.newInstance();
+dialog.show(transaction, CustomMyLibDialog.TAG);
+```
+
 #
 **Preview :**
 |![](https://github.com/gzeinnumer/MyLibDialogFragment/blob/master/preview/example2.jpg)|![](https://github.com/gzeinnumer/MyLibDialogFragment/blob/master/preview/example3.jpg)|
