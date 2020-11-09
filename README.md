@@ -213,6 +213,17 @@ dialog.show(transaction, CustomMyLibDialog.TAG);
 
 ---
 
+### Version
+- **1.0.0**
+  - First Release
+
+---
+
+### Contribution
+You can sent your constibution to `branche` `open-pull`.
+
+---
+
 ```
 Copyright 2020 M. Fadli Zein
 ```
