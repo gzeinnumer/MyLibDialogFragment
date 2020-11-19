@@ -7,7 +7,7 @@
 </h1>
 
 <p align="center">
-    <a><img src="https://img.shields.io/badge/Version-1.0.0-brightgreen.svg?style=flat"></a>
+    <a><img src="https://img.shields.io/badge/Version-1.0.1-brightgreen.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/ID-gzeinnumer-blue.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/Java-Suport-green?logo=java&style=flat"></a>
     <a><img src="https://img.shields.io/badge/Koltin-Suport-green?logo=kotlin&style=flat"></a>
@@ -109,6 +109,10 @@ public class CustomMyLibDialog extends MyLibDialog {
 
     ...
 
+    public CustomMyLibDialog() {
+        //super(R.style.CustomDialogStyle); // use this to change style . like Animation
+    }
+
     @Override
     public void onStart() {
         super.onStart();
@@ -122,16 +126,52 @@ public class CustomMyLibDialog extends MyLibDialog {
         // set dialog full screen
         setFullScreen(true);
 
-        //set canvas width, avaliable value 0.1 - 1.0
+        // set canvas width, avaliable value 0.1 - 1.0
         setCanvasWidth(0.3);
 
-        //disable BackButton to dismiss dialog
+        // set BackButton to dismiss dialog
         enableBackButton(true);
     }
 
     ...
 }
 ```
+
+#
+- Custom your animation dialog show
+
+Use super constructor in your constructor to change style
+
+```java
+public class CustomMyLibDialog extends MyLibDialog {
+
+    ...
+
+    public CustomMyLibDialog() {
+        super(R.style.CustomDialogStyle); // use this to change style . like Animation
+    }
+
+    ...
+
+}
+```
+Here is the style
+```xml
+<resources>
+
+    <!-- res->styles.xml -->
+    <style name="CustomDialogStyle" parent="Theme.MaterialComponents.Light.Dialog">
+        <item name="android:windowMinWidthMajor">80%</item>
+        <item name="android:windowMinWidthMinor">80%</item>
+        <item name="android:windowEnterAnimation">@anim/anim_in</item>
+        <item name="android:windowExitAnimation">@anim/anim_out</item>
+    </style>
+
+</resources>
+```
+Style that i prepare for you
+- [anim_in](https://github.com/gzeinnumer/MyLibDialogFragment/blob/master/lib/src/main/res/anim/anim_in.xml) & [anim_out](https://github.com/gzeinnumer/MyLibDialogFragment/blob/master/lib/src/main/res/anim/anim_out.xml).
+- [slide_down](https://github.com/gzeinnumer/MyLibDialogFragment/blob/master/lib/src/main/res/anim/slide_down.xml) & [slide_up](https://github.com/gzeinnumer/MyLibDialogFragment/blob/master/lib/src/main/res/anim/slide_up.xml).
 
 #
 - Change Corner
