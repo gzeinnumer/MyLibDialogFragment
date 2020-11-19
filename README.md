@@ -256,6 +256,8 @@ dialog.show(transaction, CustomMyLibDialog.TAG);
 ### Version
 - **1.0.0**
   - First Release
+- **1.0.1**
+  - Add animation and set custom animation
 
 ---
 
