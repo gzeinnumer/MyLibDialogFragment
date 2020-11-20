@@ -23,19 +23,25 @@ public class MyLibDialog extends DialogFragment {
 
     public static final String TAG = "BaseDialogFragment";
 
+    protected int animationStyle = R.style.DialogStyle_In;
+
     public MyLibDialog() {
+    }
+
+    public MyLibDialog(int animationStyle) {
+        this.animationStyle = animationStyle;
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        getDialog().getWindow().getAttributes().windowAnimations = R.style.DialogStyle_In;
+        getDialog().getWindow().getAttributes().windowAnimations = animationStyle;
     }
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setStyle(DialogFragment.STYLE_NO_TITLE, R.style.DialogStyle_In);
+        setStyle(DialogFragment.STYLE_NO_TITLE, animationStyle);
     }
 
     @Override

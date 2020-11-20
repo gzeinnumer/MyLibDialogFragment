@@ -16,6 +16,7 @@ public class CustomMyLibDialog extends MyLibDialog {
     }
 
     public CustomMyLibDialog() {
+        super(R.style.DialogStyle_Slide);
     }
 
     @Override
