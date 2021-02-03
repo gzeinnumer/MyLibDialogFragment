@@ -10,14 +10,24 @@
     <a><img src="https://img.shields.io/badge/Version-1.0.1-brightgreen.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/ID-gzeinnumer-blue.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/Java-Suport-green?logo=java&style=flat"></a>
-    <a><img src="https://img.shields.io/badge/Koltin-Suport-green?logo=kotlin&style=flat"></a>
+    <a><img src="https://img.shields.io/badge/Kotlin-Suport-green?logo=kotlin&style=flat"></a>
     <a href="https://github.com/gzeinnumer"><img src="https://img.shields.io/github/followers/gzeinnumer?label=follow&style=social"></a>
     <br>
     <p>Simple way to customize <b>DialogFragment</b>.</p>
 </p>
 
 ---
-## Download
+# Content List
+* [Download](#download)
+* [Feature List](#feature-list)
+* [Tech stack and 3rd library](#tech-stack-and-3rd-library)
+* [Usage](#usage)
+* [Example Code/App](#example-codeapp)
+* [Version](#version)
+* [Contribution](#contribution)
+
+---
+# Download
 Add maven `jitpack.io` and `dependencies` in `build.gradle (Project)` :
 ```gradle
 // build.gradle project
@@ -35,14 +45,16 @@ dependencies {
 }
 ```
 
-## Feature List
+---
+# Feature List
 - [x] **DialogFragment.**
 
-## Tech stack and 3rd library
+---
+# Tech stack and 3rd library
 - DialogFragment ([docs](https://developer.android.com/reference/android/app/DialogFragment))
 
 ---
-## USE
+# Usage
 
 ### DialogFragment.
 - Dialog View
@@ -229,7 +241,8 @@ Other Example:
 - Dialog 3D -> `R.drawable.rounded_layer` [xml](https://github.com/gzeinnumer/MyLibDialog/blob/main/example/Shapes/rounded_layer.xml) [Preview](https://github.com/gzeinnumer/MyLibDialog/blob/main/README_SHAPE.md#dialog-3d)
 - Shadow Dialog -> `R.drawable.dialog_shadow` [xml](https://github.com/gzeinnumer/MyLibDialog/blob/main/example/Shapes/dialog_shadow.xml) [Preview](https://github.com/gzeinnumer/MyLibDialog/blob/main/README_SHAPE.md#shadow-dialog)
 
-## Show The Dialog
+#
+### Show The Dialog
 > **MainActivity.java**
 ```java
 FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
@@ -241,28 +254,28 @@ CustomMyLibDialog dialog = CustomMyLibDialog.newInstance();
 dialog.show(transaction, CustomMyLibDialog.TAG);
 ```
 
-#
 **Preview :**
 |![](https://github.com/gzeinnumer/MyLibDialogFragment/blob/master/preview/example2.jpg)|![](https://github.com/gzeinnumer/MyLibDialogFragment/blob/master/preview/example3.jpg)|
 |---|---|
 | Use `setFullScreen(true)`| Use `setCanvasWidth(0.3)` |
 
 ---
+# Example Code/App
 
 **FullCode [MainActivity](https://github.com/gzeinnumer/MyLibDialogFragment/blob/master/app/src/main/java/com/gzeinnumer/mylibdialogfragment/MainActivity.java) & [CustomMyLibDialog](https://github.com/gzeinnumer/MyLibDialogFragment/blob/master/app/src/main/java/com/gzeinnumer/mylibdialogfragment/CustomMyLibDialog.java) &  [XML](https://github.com/gzeinnumer/MyLibDialogFragment/blob/master/app/src/main/res/layout/dialog.xml)**
 
----
+[Sample Code And App](https://github.com/gzeinnumer/MyLibDialogFragmentExample)
 
-### Version
+---
+# Version
 - **1.0.0**
   - First Release
 - **1.0.1**
   - Add animation and set custom animation
 
 ---
-
-### Contribution
-You can sent your constibution to `branche` `open-pull`.
+# Contribution
+You can sent your constibution to `branch` `open-pull`.
 
 ---
 
