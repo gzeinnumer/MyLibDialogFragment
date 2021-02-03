@@ -47,7 +47,7 @@ dependencies {
 
 ---
 # Feature List
-- [x] **DialogFragment.**
+- [x] [DialogFragment](#dialogfragment).
 
 ---
 # Tech stack and 3rd library
